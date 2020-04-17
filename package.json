@@ -1,0 +1,25 @@
+{
+  "name": "pptr-project",
+  "version": "1.0.0",
+  "description": "Automated software testing with puppetier",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --recursive --timeout=30000 ./tests/*.js --retries 2 --exit",
+    "test:device": "npx mocha --recursive --timeout=30000 ./tests/device.test.js --retries 2 --exit",
+    "test:e2e": "npx mocha --recursive --timeout=30000 ./tests/e2e/*.js --retries 2 --exit"
+  },
+  "keywords": [
+    "Puppeteer",
+    "mocha",
+    "chai",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "prettier": "^2.0.4",
+    "puppeteer": "^3.0.0"
+  }
+}
